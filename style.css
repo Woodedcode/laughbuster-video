@@ -49,6 +49,8 @@ nav{
     margin: 0 auto;
     height: 100%;
     padding: 0 20px;
+    position: relative;
+    z-index: 10;
 }
 
 li{
@@ -119,6 +121,96 @@ section{
 }
 
 /* 
+
+BACKGROUND SHAPES
+
+ */
+
+.shape{
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    
+ }
+
+.shape--0 {
+  height: 5vh;
+  width: 3vw;
+  left: 10vw;
+  top: 10vh;
+}
+
+.shape--1 {
+  height: 5vh;
+  width: 3vw;
+  left: 40vw;
+  top: 15vh;
+}
+
+.shape--2 {
+  height: 5vh;
+  width: 3vw;
+  left: 75vw;
+  top: 8vh;
+}
+
+.shape--3 {
+  height: 5vh;
+  width: 3vw;
+  left: 20vw;
+  top: 40vh;
+}
+
+.shape--4 {
+  height: 5vh;
+  width: 3vw;
+  left: 55vw;
+  top: 38vh;
+}
+
+.shape--5 {
+  height: 5vh;
+  width: 3vw;
+  left: 85vw;
+  top: 42vh;
+}
+
+.shape--6 {
+  height: 5vh;
+  width: 3vw;
+  left: 5vw;
+  top: 70vh;
+}
+
+.shape--7 {
+  height: 5vh;
+  width: 3vw;
+  left: 30vw;
+  top: 75vh;
+}
+
+.shape--8 {
+  height: 5vh;
+  width: 3vw;
+  left: 60vw;
+  top: 78vh;
+}
+
+.shape--9 {
+  height: 5vh;
+  width: 3vw;
+  left: 90vw;
+  top: 72vh;
+}
+
+.shape--10 {
+  height: 5vh;
+  width: 3vw;
+  left: 45vw;
+  top: 90vh;
+}
+
+/* 
     MOVIES CARDS
 */
 main{
@@ -159,4 +251,5 @@ main{
     top: 25%;
     right: 24%;
 }
+
 
