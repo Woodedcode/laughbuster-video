@@ -117,3 +117,46 @@ section{
     padding: 36px 65px;
     font-size: 36px;
 }
+
+/* 
+    MOVIES CARDS
+*/
+main{
+    background-color: rgb(10, 50, 115);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.popular-hits__cards{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    color: whitesmoke;
+    height: 75vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-card__image{
+    margin-top: 56px;
+    width: 200px;
+    height: 300px;
+}
+
+.carousel__prev{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 25%;
+    right: 75%;
+}
+
+.carousel__next{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 25%;
+    right: 24%;
+}
+
