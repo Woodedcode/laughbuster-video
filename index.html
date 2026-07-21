@@ -11,15 +11,15 @@
         <nav>
             <figure>
                 <a href="#landing-page" class="nav__anchor-home">
-                    <img src="assets/laughbuster-logo.png" alt="" id="site-logo">
+                    <img src="assets/laughbuster-logo.png" alt="Laughbuster Video" id="site-logo">
                 </a>   
             </figure>
             <ul class="nav__link--list">
                 <li class="nav__link">
-                    <a href="" class="nav__link--anchor link__hover-effect">Home</a>
+                    <a href="#landing-page" class="nav__link--anchor link__hover-effect">Home</a>
                 </li>
                 <li class="nav__link">
-                    <a href="" class="nav__link--anchor link__hover-effect">Rentals</a>
+                    <a href="#rentals" class="nav__link--anchor link__hover-effect">Rentals</a>
                 </li>
                 <li class="nav__link">
                     <a href="" class="nav__link--anchor link__hover-effect btn">Contact</a>
@@ -45,102 +45,202 @@
         <img src="assets/popcorn.svg" class="shape shape--10">
 
     </section>
-    <main id="">
-        <div class="popular-hits__cards">
-            <button class="carousel__prev">←</button>
-            <button class="carousel__next">→</button>
-            <!-- MOVIE 1 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/little-fockers.jpg" alt="Little Fockers" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">Little Fockers</h3>
-                </div>
+    <main id="rentals">
+    <section class="popular-hits">
+        <div class="popular-hits__heading">
+            <div>
+                <p class="popular-hits__eyebrow">Employee Picks</p>
+                <h2 class="popular-hits__title">Popular Hits</h2>
             </div>
-            <!-- MOVIE 2 -->
-            <div class="movie-card">
-                <figure>
-                   <img src="assets/beavis-butthead.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">Beavis and Butthead: Do America</h3>
-                </div>
-            </div>
-            <!-- MOVIE 3 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/the-other-guys.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">The Other Guys</h3>
-                </div>
-            </div>
-            <!-- MOVIE 4 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/the-benchwarmers.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">The Benchwarmers</h3>
-                </div>
-            </div>
-            <!-- MOVIE 5 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/chef.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">Chef</h3>
-                </div>
-            </div>
-            <!-- MOVIE 6 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/billy-madison.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">Billy Madison</h3>
-                </div>
-            </div>
-            <!-- MOVIE 7 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/sandy-wexler.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">Sandy Wexler</h3>
-                </div>
-            </div>
-            <!-- MOVIE 8 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/game-over.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">Game Over, Man!</h3>
-                </div>
-            </div>
-            <!-- MOVIE 9 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/white-chicks.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">White Chicks</h3>
-                </div>
-            </div>
-            <!-- MOVIE 10 -->
-            <div class="movie-card">
-                <figure>
-                    <img src="assets/thats-my-boy.jpg" class="movie-card__image">
-                </figure>
-                <div class="movie-card__wrapper">
-                    <h3 class="movie-card__title">That's My Boy</h3>
-                </div>
+
+            <div class="carousel__buttons">
+                <button
+                    class="carousel__button carousel__prev"
+                    type="button"
+                    aria-label="Scroll movies left"
+                >
+                    ←
+                </button>
+
+                <button
+                    class="carousel__button carousel__next"
+                    type="button"
+                    aria-label="Scroll movies right"
+                >
+                    →
+                </button>
             </div>
         </div>
-    </main>
+
+        <div class="carousel">
+            <div class="popular-hits__cards">
+
+                <!-- MOVIE 1 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/little-fockers.jpg"
+                            alt="Little Fockers movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">Little Fockers</h3>
+                        <p class="movie-card__details">2010 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 2 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/beavis-butthead.jpg"
+                            alt="Beavis and Butt-Head Do America movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">
+                            Beavis and Butt-Head Do America
+                        </h3>
+                        <p class="movie-card__details">1996 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 3 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/the-other-guys.jpg"
+                            alt="The Other Guys movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">The Other Guys</h3>
+                        <p class="movie-card__details">2010 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 4 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/the-benchwarmers.jpg"
+                            alt="The Benchwarmers movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">The Benchwarmers</h3>
+                        <p class="movie-card__details">2006 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 5 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/chef.jpg"
+                            alt="Chef movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">Chef</h3>
+                        <p class="movie-card__details">2014 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 6 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/billy-madison.jpg"
+                            alt="Billy Madison movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">Billy Madison</h3>
+                        <p class="movie-card__details">1995 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 7 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/sandy-wexler.jpg"
+                            alt="Sandy Wexler movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">Sandy Wexler</h3>
+                        <p class="movie-card__details">2017 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 8 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/game-over.jpg"
+                            alt="Game Over Man movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">Game Over, Man!</h3>
+                        <p class="movie-card__details">2018 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 9 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/white-chicks.jpg"
+                            alt="White Chicks movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">White Chicks</h3>
+                        <p class="movie-card__details">2004 · Comedy</p>
+                    </div>
+                </article>
+
+                <!-- MOVIE 10 -->
+                <article class="movie-card">
+                    <figure class="movie-card__figure">
+                        <img
+                            src="assets/thats-my-boy.jpg"
+                            alt="That's My Boy movie poster"
+                            class="movie-card__image"
+                        >
+                    </figure>
+
+                    <div class="movie-card__wrapper">
+                        <h3 class="movie-card__title">That's My Boy</h3>
+                        <p class="movie-card__details">2012 · Comedy</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</main>s
 
     <script src="main.js"></script>
 </body>
