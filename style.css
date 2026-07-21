@@ -480,6 +480,16 @@ Iphones, Samsung Galaxy, and smaller
         height: 150px;
     }
 
+    #landing-page {
+        min-height: 11vh;
+        padding: 16px;
+    }
+
+    .hero__wrapper {
+        padding-top: 48px;
+        text-align: center;
+    }
+
     .hero__title{
         font-size: 24px;
     }
@@ -494,59 +504,47 @@ Iphones, Samsung Galaxy, and smaller
     }
 
     .shape--0{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--1{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--2{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--3{
-        height: 6vh;
-        width: 6vw;
-        border: 1px solid red;
+        visibility: hidden;
     }
 
     .shape--4{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--5{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--6{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--7{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--8{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--9{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;
     }
 
     .shape--10{
-        height: 6vh;
-        width: 6vw;
+        visibility: hidden;s
     }
 
     .popular-hits__heading {
