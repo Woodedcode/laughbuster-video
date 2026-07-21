@@ -379,7 +379,7 @@ BACKGROUND SHAPES
 /* 
 Ipads, Samsung Galaxy Tablet, and Microsoft Surface
  */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #site-logo{
         width: 250px;
         height: 175px
@@ -468,13 +468,13 @@ Ipads, Samsung Galaxy Tablet, and Microsoft Surface
     .movie-card:hover {
         transform: scale(1.03);
     }
-}
+} */
 
 /* 
 Iphones, Samsung Galaxy, and smaller
  */
 
-@media (max-width: 520px) {
+/* @media (max-width: 520px) {
     #site-logo{
         width: 200px;
         height: 150px;
@@ -574,4 +574,4 @@ Iphones, Samsung Galaxy, and smaller
     .movie-card__title {
         font-size: 15px;
     }
-}
+} */
