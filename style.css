@@ -377,9 +377,14 @@ BACKGROUND SHAPES
 
 
 /* 
-TABLET
+Ipads, Samsung Galaxy Tablet, and Microsoft Surface
  */
 @media (max-width: 768px) {
+    #site-logo{
+        width: 250px;
+        height: 175px
+    }
+
     .hero__title{
         font-size: 32px;
     }
@@ -390,7 +395,7 @@ TABLET
 
     .hero__cta{
         padding: 24px 48px;
-        font-size: 24px
+        font-size: 18px
     }
 
     .shape--0{
@@ -466,10 +471,15 @@ TABLET
 }
 
 /* 
-MOBILE
+Iphones, Samsung Galaxy, and smaller
  */
 
 @media (max-width: 520px) {
+    #site-logo{
+        width: 200px;
+        height: 150px;
+    }
+
     .hero__title{
         font-size: 24px;
     }
@@ -480,7 +490,7 @@ MOBILE
 
     .hero__cta{
         padding: 16px 32px;
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .shape--0{
