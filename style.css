@@ -20,6 +20,7 @@
 */
 
 #landing-page {
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -288,6 +289,10 @@ BACKGROUND SHAPES
     scrollbar-width: none;
 }
 
+.popular-hits__cards:first-child{
+    padding: 20px;
+}
+
 .popular-hits__cards::-webkit-scrollbar {
     display: none;
 }
@@ -378,78 +383,40 @@ BACKGROUND SHAPES
 /* 
 Ipads, Samsung Galaxy Tablet, and Microsoft Surface
  */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     #site-logo{
         width: 250px;
         height: 175px
     }
 
     .hero__title{
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .hero__sub-title{
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .hero__cta{
-        padding: 24px 48px;
-        font-size: 18px
+        padding: 32px 60px;
+        font-size: 24px;
     }
 
-    .shape--0{
-        height: 5vh;
-        width: 4vw;
+    .little{
     }
 
-    .shape--1{
-        height: 5vh;
-        width: 4vw;
-    }
-
-    .shape--2{
-        height: 5vh;
-        width: 4vw;
-    }
-
-    .shape--3{
-        height: 5vh;
-        width: 4vw;
-    }
-
-    .shape--4{
-        height: 5vh;
-        width: 4vw;
-    }
-
-    .shape--5{
-        height: 5vh;
-        width: 4vw;
-    }
-
-    .shape--6{
-        height: 5vh;
-        width: 4vw;
-    }
-
-    .shape--7{
-        height: 5vh;
-        width: 4vw;
-    }
-
-    .shape--8{
-        height: 5vh;
-        width: 4vw;
-    }
-
-    .shape--9{
-        height: 5vh;
-        width: 4vw;
-    }
-
+    .shape--0,
+    .shape--1,
+    .shape--2,
+    .shape--3,
+    .shape--4,
+    .shape--5,
+    .shape--6,
+    .shape--7,
+    .shape--8,
+    .shape--9,
     .shape--10{
-        height: 5vh;
-        width: 4vw;
+        visibility: hidden;
     }
 
     .popular-hits {
@@ -467,20 +434,20 @@ Ipads, Samsung Galaxy Tablet, and Microsoft Surface
     .movie-card:hover {
         transform: scale(1.03);
     }
-} */
+}
 
 /* 
 Iphones, Samsung Galaxy, and smaller
  */
 
-/* @media (max-width: 520px) {
+@media (max-width: 520px) {
     #site-logo{
-        width: 200px;
-        height: 150px;
+        width: 150px;
+        height: 100px;
     }
 
     #landing-page {
-        min-height: 11vh;
+        min-height: 75vh;
         padding: 16px;
     }
 
@@ -490,11 +457,12 @@ Iphones, Samsung Galaxy, and smaller
     }
 
     .hero__title{
-        font-size: 24px;
+        margin-top: 32px;
+        font-size: 18px;
     }
 
     .hero__sub-title{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .hero__cta{
@@ -502,49 +470,20 @@ Iphones, Samsung Galaxy, and smaller
         font-size: 14px;
     }
 
-    .shape--0{
-        visibility: hidden;
-    }
-
-    .shape--1{
-        visibility: hidden;
-    }
-
-    .shape--2{
-        visibility: hidden;
-    }
-
-    .shape--3{
-        visibility: hidden;
-    }
-
-    .shape--4{
-        visibility: hidden;
-    }
-
-    .shape--5{
-        visibility: hidden;
-    }
-
-    .shape--6{
-        visibility: hidden;
-    }
-
-    .shape--7{
-        visibility: hidden;
-    }
-
-    .shape--8{
-        visibility: hidden;
-    }
-
-    .shape--9{
-        visibility: hidden;
-    }
-
+    .shape--0,
+    .shape--1,
+    .shape--2,
+    .shape--3,
+    .shape--4,
+    .shape--5,
+    .shape--6,
+    .shape--7,
+    .shape--8,
+    .shape--9,
     .shape--10{
-        visibility: hidden;s
+        visibility: hidden;
     }
+
 
     .popular-hits__heading {
         width: 92%;
@@ -573,4 +512,8 @@ Iphones, Samsung Galaxy, and smaller
     .movie-card__title {
         font-size: 15px;
     }
-} */
+
+    .contact__btn{
+    padding: 10px 15px;
+    }
+}
