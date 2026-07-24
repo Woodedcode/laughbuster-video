@@ -22,37 +22,42 @@
                     <a href="#rentals" class="nav__link--anchor link__hover-effect">Rentals</a>
                 </li>
                 <li class="nav__link">
-                    <a href="" class="nav__link--anchor link__hover-effect btn">Contact</a>
+                    <a href="" class="nav__link--anchor contact__btn btn">Contact</a>
                 </li>
             </ul>
         </nav>
         <div class="hero__wrapper">
   <h1 class="hero__title">Making terrible movie nights slightly less terrible.</h1>
   <h2 class="hero__sub-title">Be Kind, Rewind Your Expectations.</h2>
-  <a href="#rentals" class="hero__cta btn">Browse the shelves →</a>
+  <a href="#rentals" class="hero__cta browse__btn btn">Browse the shelves →</a>
 </div>
-<!-- SHAPES FOR BG -->
-        <img src="assets/popcorn.svg" class="shape shape--0">
-        <img src="assets/popcorn.svg" class="shape shape--1">
-        <img src="assets/popcorn.svg" class="shape shape--2">
-        <img src="assets/popcorn.svg" class="shape shape--3">
-        <img src="assets/popcorn.svg" class="shape shape--4">
-        <img src="assets/popcorn.svg" class="shape shape--5">
-        <img src="assets/popcorn.svg" class="shape shape--6">
-        <img src="assets/popcorn.svg" class="shape shape--7">
-        <img src="assets/popcorn.svg" class="shape shape--8">
-        <img src="assets/popcorn.svg" class="shape shape--9">
-        <img src="assets/popcorn.svg" class="shape shape--10">
 
     </section>
-    <main id="rentals">
+   <main id="rentals">
     <section class="popular-hits">
         <div class="popular-hits__heading">
-            <div>
+            <div class="popular-hits__header-content">
                 <p class="popular-hits__eyebrow">Employee Picks</p>
                 <h2 class="popular-hits__title">Popular Hits</h2>
-            </div>
 
+                <form class="movie-search" id="movie-search">
+                    <label for="movie-search-input" class="search-input">
+                        Search movies...
+                    </label>
+
+                    <input
+                        type="search"
+                        id="movie-search-input"
+                        class="movie-search__input"
+                        placeholder="Search the shelves..."
+                        autocomplete="off"
+                    >
+
+                    <button class="movie-search__btn" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
             <div class="carousel__buttons">
                 <button
                     class="carousel__button carousel__prev"
@@ -81,7 +86,7 @@
                         <img
                             src="assets/little-fockers.jpg"
                             alt="Little Fockers movie poster"
-                            class="movie-card__image"
+                            class="movie-card__image little"
                         >
                     </figure>
 
@@ -240,7 +245,7 @@
             </div>
         </div>
     </section>
-</main>s
+</main>
 
     <script src="main.js"></script>
 </body>
