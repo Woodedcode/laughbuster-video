@@ -2,6 +2,9 @@ const scaleFactor = 1 / 20;
 const movieCarousel = document.querySelector(".popular-hits__cards");
 const previousButton = document.querySelector(".carousel__prev");
 const nextButton = document.querySelector(".carousel__next");
+const movieSearchForm = document.getElementById("movie-search");
+const movieSearchInput = document.getElementById("movie-search-input");
+const movieCards = document.querySelectorAll(".movie-card");
 
 
 // CAROUSEL
@@ -52,6 +55,33 @@ document.querySelector(".carousel__next").addEventListener('click', function(){
     cardsRow.style.transform = "translateX(" + currentPosition + "px)";
 })
 
+// SEARCH BAR
+function filterMovies() {
+    const searchValue = movieSearchInput.value.trim().toLowerCase();
+
+    movieCards.forEach((card) => {
+        const movieTitle = card
+            .querySelector(".movie-card__title")
+            .textContent
+            .toLowerCase();
+
+        const movieDetails = card
+            .querySelector(".movie-card__details")
+            .textContent
+            .toLowerCase();
+
+        const matchesSearch =
+            movieTitle.includes(searchValue) ||
+            movieDetails.includes(searchValue);
+
+        card.style.display = matchesSearch ? "" : "none";
+    });
+}
+
+movieSearchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+};
+
 // BACKGROUND MOVEMENT
 function moveBackground(event) {
     const shapes = document.querySelectorAll(".shape");
@@ -63,4 +93,11 @@ function moveBackground(event) {
         const boolInt = isOdd ? -1 : 1;
         shapes[i].style.transform = `translate(${x * boolInt}px,${y * boolInt}px)`
     }
+};
+
+
+// API SEARCH
+movieSearchForm.addEventListener("submit", async (event) => {
+    const searchValue = movieSearchInput.value.trim().toLowerCase();
+event.preventDefault();
 }
